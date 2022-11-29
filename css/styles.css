@@ -1,14 +1,203 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
-  background-color: #f4f4fd;
-  font-family: "Roboto", "Raleway", sans-serif;
+  background-color: white;
+  color: #2e2f42;
+
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
   text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo span {
+  color: #4d5ae5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation-link {
+  font-weight: 500;
   line-height: 1.5;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #434455;
+}
+
+.navigation-link:active {
+  color: #4d5ae5;
+}
+
+.contact-link {
+  line-height: 1.5;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #4d5ae5;
+}
+
+.hero {
+  background-color: #2e2f42;
+  text-align: center;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.hero-button {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.18;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  cursor: pointer;
+  background: #4d5ae5;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+.hero-button:active {
+  cursor: pointer;
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.info-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.info-text {
+  line-height: 1.5;
+}
+
+.job-heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.job-photo {
+  width: 360;
+  height: 300;
+}
+
+.avatar-heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.avatar-card {
+  width: 264;
+  height: 200;
+}
+
+.avatar-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.avatar-text {
+  line-height: 1.5;
+  text-align: center;
+  color: #434455;
+}
+
+.ending {
+  background-color: #2e2f42;
+}
+
+.logo-ending {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #f4f4fd;
+}
+
+.text-ending {
+  color: #e7e9fc;
+  line-height: 1.5;
+}
+
+.logo-ending span {
+  color: #4d5ae5;
+}
+
+.button-link {
+  cursor: pointer;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  letter-spacing: 0.04em;
+}
+
+.button-link:active {
+  cursor: pointer;
+  background: #4d5ae5;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.card-photo {
+  width: 360;
+  height: 300;
+}
+
+.card-title {
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card-text {
   color: #434455;
 }
