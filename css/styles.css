@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
-  background-color: white;
-  color: #2e2f42;
+  background-color: var(--third-color);
+  color: var(--first-background-color);
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -18,6 +18,16 @@ a {
   color: inherit;
 }
 
+:root {
+  --first-background-color: #2e2f42;
+  --second-background-color: #404bbf;
+  --main-color: #4d5ae5;
+  --secondary-color: #434455;
+  --third-color: #ffffff;
+  --fouth-color: #f4f4fd;
+  --fifth-color: #e7e9fc;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -28,7 +38,7 @@ a {
 }
 
 .logo span {
-  color: #4d5ae5;
+  color: var(--main-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -39,29 +49,30 @@ a {
 
 .navigation-link:hover,
 .navigation-link:focus {
-  color: #434455;
+  color: var(--secondary-color);
 }
 
 .navigation-link:active {
-  color: #4d5ae5;
+  color: var(--main-color);
 }
 
 .contact-link {
   line-height: 1.5;
+  color: var(--secondary-color);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #4d5ae5;
+  color: var(--main-color);
 }
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--first-background-color);
   text-align: center;
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--third-color);
   font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
@@ -71,27 +82,27 @@ a {
   cursor: pointer;
   font-weight: 500;
   line-height: 1.18;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--main-color);
+  color: var(--third-color);
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   cursor: pointer;
-  background: #4d5ae5;
+  background: var(--second-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
 }
 
 .hero-button:active {
   cursor: pointer;
-  background: #404bbf;
+  background: var(--second-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .info-title {
@@ -102,6 +113,7 @@ a {
 
 .info-text {
   line-height: 1.5;
+  color: var(--secondary-color);
 }
 
 .job-heading {
@@ -116,6 +128,14 @@ a {
 .job-photo {
   width: 360;
   height: 300;
+}
+
+.avatars {
+  background: var(--fouth-color);
+}
+
+.avatar-list-section {
+  background: var(--third-color);
 }
 
 .avatar-heading {
@@ -141,11 +161,11 @@ a {
 .avatar-text {
   line-height: 1.5;
   text-align: center;
-  color: #434455;
+  color: var(--secondary-color);
 }
 
 .ending {
-  background-color: #2e2f42;
+  background-color: var(--first-background-color);
 }
 
 .logo-ending {
@@ -155,36 +175,37 @@ a {
   line-height: 1.16;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: #f4f4fd;
+  color: var(--fouth-color);
 }
 
 .text-ending {
-  color: #e7e9fc;
+  color: var(--fifth-color);
   line-height: 1.5;
 }
 
 .logo-ending span {
-  color: #4d5ae5;
+  color: var(--main-color);
 }
 
 .button-link {
   cursor: pointer;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background: var(--fouth-color);
+  border: 1px solid var(--fifth-color);
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  letter-spacing: 0.04em;
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-.button-link:active {
+.button-link:hover,
+.button-link:focus {
   cursor: pointer;
-  background: #4d5ae5;
+  background: var(--main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: #ffffff;
+  color: var(--third-color);
 }
 
 .card-photo {
@@ -193,11 +214,12 @@ a {
 }
 
 .card-title {
-  color: #2e2f42;
+  color: var(--first-background-color);
   font-weight: 500;
   line-height: 1.2;
+  font-size: 20px;
 }
 
 .card-text {
-  color: #434455;
+  color: var(--secondary-color);
 }
